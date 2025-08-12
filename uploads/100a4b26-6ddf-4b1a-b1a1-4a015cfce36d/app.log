@@ -1,0 +1,10 @@
+2025-08-12 15:03:03,533 [INFO] Step-1: Folder created: uploads/100a4b26-6ddf-4b1a-b1a1-4a015cfce36d
+2025-08-12 15:03:03,535 [INFO] Step-2: File sent {'edges.csv': 'uploads/100a4b26-6ddf-4b1a-b1a1-4a015cfce36d/edges.csv'}
+2025-08-12 15:03:03,535 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 0
+2025-08-12 15:03:10,008 [INFO] Step-3: Response from scrapping: f:\n f.write(\'\\n\'.join(metadata_content))\n', 'libraries': ['pandas'], 'questions': ["What is the structure of the network data provided in 'edges.csv'?", 'How can the data be prepared for further analysis?']}
+2025-08-12 15:03:11,045 [INFO] Step-4: Execution result of the scrape code: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:03:11,046 [INFO] Step-5: Getting execution code from llm. Tries count = 0
+2025-08-12 15:03:35,508 [INFO] Step-5: Response from llm: dictionary result_data = { "question_1_answer": structure_info, "question_2_answer": preparation_info } # Save the result to a JSON file with open(output_file_path, 'w') as f: json.dump(result_data, f, indent=4)
+2025-08-12 15:03:35,508 [INFO] Step-6: Executing final code. Tries count = 0
+2025-08-12 15:03:37,990 [INFO] Step-6: Executing final code result: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:03:37,990 [INFO] Step-7: send result back

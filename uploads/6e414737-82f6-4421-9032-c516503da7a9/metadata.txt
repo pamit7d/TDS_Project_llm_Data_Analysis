@@ -1,0 +1,46 @@
+File: uploads/6e414737-82f6-4421-9032-c516503da7a9/data.csv
+Description: Processed data from edges.csv, saved as data.csv
+
+DataFrame Info:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 7 entries, 0 to 6
+Data columns (total 2 columns):
+ #   Column  Non-Null Count  Dtype 
+---  ------  --------------  ----- 
+ 0   source  7 non-null      object
+ 1   target  7 non-null      object
+dtypes: object(2)
+memory usage: 244.0+ bytes
+
+
+DataFrame Columns:
+['source', 'target']
+
+DataFrame Head:
+  source target
+0  Alice    Bob
+1  Alice  Carol
+2    Bob  Carol
+3    Bob  David
+4    Bob    Eve
+
+Content of questions.txt:
+Use the undirected network in `edges.csv`.
+Return a JSON object with keys:
+- `edge_count`: number
+- `highest_degree_node`: string
+- `average_degree`: number
+- `density`: number
+- `shortest_path_alice_eve`: number
+- `network_graph`: base64 PNG string under 100kB
+- `degree_histogram`: base64 PNG string under 100kB
+Answer:
+1. How many edges are in the network?
+2. Which node has the highest degree?
+3. What is the average degree of the network?
+4. What is the network density?
+5. What is the length of the shortest path between Alice and Eve?
+6. Draw the network with nodes labelled and edges shown. Encode as base64 PNG.
+7. Plot the degree distribution as a bar chart with green bars. Encode as base64 PNG.
+
+JSON Answer Format for subsequent tasks: The final answer to the user's query should be in JSON format, if applicable, as specified by the task's output schema.

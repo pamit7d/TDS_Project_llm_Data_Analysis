@@ -1,0 +1,10 @@
+2025-08-12 15:42:08,855 [INFO] Step-1: Folder created: uploads/fc370106-a537-4afe-8be0-b7f83eb4768c
+2025-08-12 15:42:08,858 [INFO] Step-2: File sent {'questions.txt': 'uploads/fc370106-a537-4afe-8be0-b7f83eb4768c/questions.txt'}
+2025-08-12 15:42:08,858 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 0
+2025-08-12 15:42:49,342 [INFO] Step-3: Response from scrapping: with nodes labelled and edges shown. Encode as base64 PNG.', 'Plot the degree distribution as a bar chart with green bars. Encode as base64 PNG.']}
+2025-08-12 15:42:53,009 [INFO] Step-4: Execution result of the scrape code: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:42:53,009 [INFO] Step-5: Getting execution code from llm. Tries count = 0
+2025-08-12 15:43:17,905 [INFO] Step-5: Response from llm: # Save the results to a JSON file output_dir = "uploads/fc370106-a537-4afe-8be0-b7f83eb476c" os.makedirs(output_dir, exist_ok=True) output_path = os.path.join(output_dir, "result.json") with open(output_path, 'w') as f: json.dump(results, f, indent=4)
+2025-08-12 15:43:17,905 [INFO] Step-6: Executing final code. Tries count = 0
+2025-08-12 15:43:20,158 [INFO] Step-6: Executing final code result: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:43:20,159 [ERROR] Step-7: Error occur while sending result: Expecting value: line 1 column 1 (char 0)

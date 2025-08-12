@@ -1,0 +1,13 @@
+2025-08-12 15:51:12,099 [INFO] Step-1: Folder created: uploads/11aa245a-bd12-48c9-aa70-411a5388b88e
+2025-08-12 15:51:12,100 [INFO] Step-2: File sent {'questions.txt': 'uploads/11aa245a-bd12-48c9-aa70-411a5388b88e/questions.txt'}
+2025-08-12 15:51:12,100 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 0
+2025-08-12 15:51:35,529 [INFO] Step-3: Response from scrapping: with nodes labelled and edges shown. Encode as base64 PNG.', 'Plot the degree distribution as a bar chart with green bars. Encode as base64 PNG.']}
+2025-08-12 15:51:36,466 [INFO] Step-4: Execution result of the scrape code: in _make_engine self.handles = get_handle( ^^^^^^^^^^^ File "/home/mypc/Downloads/TDS_project2-main_new/TDS_project2-main/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( ^^^^^ FileNotFoundError: [Errno 2] No such file or directory: 'uploads/11aa245a-bd12-48c9-aa70-411a5388b88e/edges.csv'
+2025-08-12 15:51:36,466 [ERROR] Step-4: Error occured while scrapping. Tries count = 0
+2025-08-12 15:51:49,146 [INFO] Step-3: Response from scrapping: with nodes labelled and edges shown. Encode as base64 PNG.', 'Plot the degree distribution as a bar chart with green bars. Encode as base64 PNG.']}
+2025-08-12 15:51:50,007 [INFO] Step-4: Execution result of the scrape code: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:51:50,007 [INFO] Step-5: Getting execution code from llm. Tries count = 0
+2025-08-12 15:52:12,101 [INFO] Step-5: Response from llm: empty." except Exception as e: results['status'] = 'error' results['message'] = f"An unexpected error occurred: {str(e)}" os.makedirs(output_dir, exist_ok=True) with open(result_file_path, 'w') as f: json.dump(results, f, indent=4)
+2025-08-12 15:52:12,101 [INFO] Step-6: Executing final code. Tries count = 0
+2025-08-12 15:52:14,690 [INFO] Step-6: Executing final code result: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:52:14,691 [INFO] Step-7: send result back

@@ -1,0 +1,21 @@
+2025-08-12 15:01:45,288 [INFO] Step-1: Folder created: uploads/99bc3875-1abd-4b68-aa17-aa9038e607b3
+2025-08-12 15:01:45,290 [INFO] Step-2: File sent {'edges.csv': 'uploads/99bc3875-1abd-4b68-aa17-aa9038e607b3/edges.csv'}
+2025-08-12 15:01:45,290 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 0
+2025-08-12 15:02:09,014 [INFO] Step-3: Response from scrapping: as f:\n f.write("\\n".join(metadata_content))\n', 'libraries': ['pandas'], 'questions': ['What are the unique entities (nodes) present in the dataset?', 'What are the direct relationships (edges) between these entities?']}
+2025-08-12 15:02:10,763 [INFO] Step-4: Execution result of the scrape code: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:02:10,763 [INFO] Step-5: Getting execution code from llm. Tries count = 0
+2025-08-12 15:02:13,694 [INFO] Step-5: Response from llm: between these entities? direct_relationships = df.drop_duplicates().values.tolist() result = { "unique_entities": unique_entities, "direct_relationships": direct_relationships } output_path = "uploads/99bc3875-1abd-4b68-aa17-aa9038e607b3/result.json" with open(output_path, 'w') as f: json.dump(result, f, indent=4)
+2025-08-12 15:02:13,694 [INFO] Step-6: Executing final code. Tries count = 0
+2025-08-12 15:02:14,880 [INFO] Step-6: Executing final code result: in _make_engine self.handles = get_handle( ^^^^^^^^^^^ File "/home/mypc/Downloads/TDS_project2-main_new/TDS_project2-main/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( ^^^^^ FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
+2025-08-12 15:02:14,880 [ERROR] Step-6: Error occured while executing code. Tries count = 2
+2025-08-12 15:02:14,880 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-12 15:02:18,344 [INFO] Step-5: Response from llm: { "unique_entities": all_entities, "direct_relationships": edges } # Save the result to a JSON file output_path = "uploads/99bc3875-1abd-4b68-aa17-aa9038e607b3/result.json" with open(output_path, 'w') as f: json.dump(result, f, indent=4)
+2025-08-12 15:02:19,493 [INFO] Step-6: Executing final code result: in _make_engine self.handles = get_handle( ^^^^^^^^^^^ File "/home/mypc/Downloads/TDS_project2-main_new/TDS_project2-main/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( ^^^^^ FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
+2025-08-12 15:02:19,493 [ERROR] Step-6: Error occured while executing code. Tries count = 3
+2025-08-12 15:02:19,493 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-12 15:02:24,288 [INFO] Step-5: Response from llm: dictionary result = { "unique_entities": unique_entities, "direct_relationships": direct_relationships } # Save the result to a JSON file with open(output_filepath, 'w') as f: json.dump(result, f, indent=4)
+2025-08-12 15:02:25,395 [INFO] Step-6: Executing final code result: in _make_engine self.handles = get_handle( ^^^^^^^^^^^ File "/home/mypc/Downloads/TDS_project2-main_new/TDS_project2-main/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( ^^^^^ FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
+2025-08-12 15:02:25,395 [ERROR] Step-6: Error occured while executing code. Tries count = 4
+2025-08-12 15:02:25,395 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-12 15:02:29,005 [INFO] Step-5: Response from llm: dictionary result = { "unique_entities": unique_nodes, "direct_relationships": direct_relationships } # Save the result to a JSON file with open(output_path, 'w') as f: json.dump(result, f, indent=4)
+2025-08-12 15:02:30,143 [INFO] Step-6: Executing final code result: in _make_engine self.handles = get_handle( ^^^^^^^^^^^ File "/home/mypc/Downloads/TDS_project2-main_new/TDS_project2-main/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( ^^^^^ FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'

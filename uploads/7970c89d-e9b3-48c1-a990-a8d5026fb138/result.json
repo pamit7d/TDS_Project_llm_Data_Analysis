@@ -1,0 +1,54 @@
+{
+    "file_name": "edges.csv",
+    "data_info": {
+        "num_rows": 7,
+        "num_columns": 2,
+        "columns_info": [
+            {
+                "name": "source",
+                "dtype": "object",
+                "non_null_count": 7,
+                "unique_values": [
+                    "Alice",
+                    "Bob",
+                    "Carol",
+                    "David"
+                ]
+            },
+            {
+                "name": "target",
+                "dtype": "object",
+                "non_null_count": 7,
+                "unique_values": [
+                    "Bob",
+                    "Carol",
+                    "David",
+                    "Eve"
+                ]
+            }
+        ],
+        "memory_usage_bytes": 876
+    },
+    "head": [
+        {
+            "source": "Alice",
+            "target": "Bob"
+        },
+        {
+            "source": "Alice",
+            "target": "Carol"
+        },
+        {
+            "source": "Bob",
+            "target": "Carol"
+        },
+        {
+            "source": "Bob",
+            "target": "David"
+        },
+        {
+            "source": "Bob",
+            "target": "Eve"
+        }
+    ]
+}

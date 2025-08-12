@@ -1,0 +1,10 @@
+2025-08-12 15:52:47,994 [INFO] Step-1: Folder created: uploads/6e414737-82f6-4421-9032-c516503da7a9
+2025-08-12 15:52:47,996 [INFO] Step-2: File sent {'edges.csv': 'uploads/6e414737-82f6-4421-9032-c516503da7a9/edges.csv', 'questions.txt': 'uploads/6e414737-82f6-4421-9032-c516503da7a9/questions.txt'}
+2025-08-12 15:52:47,996 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 0
+2025-08-12 15:53:13,809 [INFO] Step-3: Response from scrapping: in JSON format, if applicable, as specified by the task\'s output schema.")\n\n# Write metadata to metadata.txt\nwith open(metadata_txt_path, \'w\') as f:\n f.write("\\n".join(metadata_content))\n', 'libraries': ['pandas'], 'questions': ['source,target\nAlice,Bob\nAlice,Carol\nBob,Carol\nBob,David\nBob,Eve\nCarol,David\nDavid,Eve\n']}
+2025-08-12 15:53:14,682 [INFO] Step-4: Execution result of the scrape code: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:53:14,682 [INFO] Step-5: Getting execution code from llm. Tries count = 0
+2025-08-12 15:53:23,761 [INFO] Step-5: Response from llm: degree_histogram_base64 } # Save the result to a JSON file output_filepath = "uploads/6e414737-82f6-4421-9032-c516503da7a9/result.json" with open(output_filepath, 'w') as f: json.dump(result, f, indent=4) print(f"Results saved to {output_filepath}")
+2025-08-12 15:53:23,761 [INFO] Step-6: Executing final code. Tries count = 0
+2025-08-12 15:53:26,660 [INFO] Step-6: Executing final code result: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:53:26,660 [INFO] Step-7: send result back

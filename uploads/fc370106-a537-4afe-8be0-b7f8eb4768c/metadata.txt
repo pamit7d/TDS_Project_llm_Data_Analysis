@@ -1,0 +1,5 @@
+--- Data Description ---
+Input file: uploads/fc370106-a537-4afe-8be0-b7f8eb4768c/edges.csv
+This CSV file contains the edges of an undirected network.
+
+Error reading CSV for metadata: [Errno 2] No such file or directory: 'uploads/fc370106-a537-4afe-8be0-b7f8eb4768c/edges.csv'

@@ -1,0 +1,45 @@
+--- File Descriptions ---
+File: data.csv
+Description: This file contains the primary dataset scraped or processed for analysis. It is a copy of the input 'edges.csv'.
+File: edges.csv
+Description: This file is the original uploaded CSV containing graph edge data (source-target pairs).
+
+--- Dataset Metadata (data.csv) ---
+
+DataFrame Info:
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 7 entries, 0 to 6
+Data columns (total 2 columns):
+ #   Column  Non-Null Count  Dtype 
+---  ------  --------------  ----- 
+ 0   source  7 non-null      object
+ 1   target  7 non-null      object
+dtypes: object(2)
+memory usage: 244.0+ bytes
+
+
+DataFrame Columns:
+
+['source', 'target']
+
+DataFrame Head (first 5 rows):
+
+  source target
+0  Alice    Bob
+1  Alice  Carol
+2    Bob  Carol
+3    Bob  David
+4    Bob    Eve
+
+DataFrame Shape (rows, columns):
+
+(7, 2)
+
+DataFrame Description (numerical and categorical columns statistics):
+
+       source target
+count       7      7
+unique      4      4
+top       Bob  Carol
+freq        3      2

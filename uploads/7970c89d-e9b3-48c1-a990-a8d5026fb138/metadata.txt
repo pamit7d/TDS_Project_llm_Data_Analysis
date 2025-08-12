@@ -1,0 +1,26 @@
+--- File Descriptions ---
+1. uploads/7970c89d-e9b3-48c1-a990-a8d5026fb138/edges.csv: The original input CSV file containing graph edge data.
+2. uploads/7970c89d-e9b3-48c1-a990-a8d5026fb138/data.csv: The processed dataset saved in CSV format.
+3. uploads/7970c89d-e9b3-48c1-a990-a8d5026fb138/metadata.txt: This file contains metadata about the collected data.
+
+--- DataFrame Info ---
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 7 entries, 0 to 6
+Data columns (total 2 columns):
+ #   Column  Non-Null Count  Dtype 
+---  ------  --------------  ----- 
+ 0   source  7 non-null      object
+ 1   target  7 non-null      object
+dtypes: object(2)
+memory usage: 244.0+ bytes
+
+--- DataFrame Columns ---
+['source', 'target']
+
+--- DataFrame Head (first 5 rows) ---
+  source target
+0  Alice    Bob
+1  Alice  Carol
+2    Bob  Carol
+3    Bob  David
+4    Bob    Eve

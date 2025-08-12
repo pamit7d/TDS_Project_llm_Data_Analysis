@@ -1,0 +1,10 @@
+2025-08-12 15:48:53,396 [INFO] Step-1: Folder created: uploads/5c28b63d-2156-4592-9b12-be8ca8892d40
+2025-08-12 15:48:53,397 [INFO] Step-2: File sent {'edges.csv': 'uploads/5c28b63d-2156-4592-9b12-be8ca8892d40/edges.csv'}
+2025-08-12 15:48:53,397 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 0
+2025-08-12 15:49:12,704 [INFO] Step-3: Response from scrapping: metadata to metadata.txt\nwith open(metadata_path, \'w\') as f:\n f.write(full_metadata_content)\n', 'libraries': ['pandas'], 'questions': ['Extract graph edge data from the provided CSV content and prepare it for analysis.']}
+2025-08-12 15:49:13,592 [INFO] Step-4: Execution result of the scrape code: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:49:13,593 [INFO] Step-5: Getting execution code from llm. Tries count = 0
+2025-08-12 15:49:17,173 [INFO] Step-5: Response from llm: 'source' and 'target' keys edges_list = edges_df.to_dict(orient='records') # Save the list of dictionaries to a JSON file with open(output_json_path, 'w') as f: json.dump(edges_list, f, indent=4)
+2025-08-12 15:49:17,173 [INFO] Step-6: Executing final code. Tries count = 0
+2025-08-12 15:49:18,070 [INFO] Step-6: Executing final code result: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:49:18,070 [INFO] Step-7: send result back

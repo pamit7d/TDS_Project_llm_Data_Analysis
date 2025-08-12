@@ -1,0 +1,30 @@
+[
+    {
+        "source": "Alice",
+        "target": "Bob"
+    },
+    {
+        "source": "Alice",
+        "target": "Carol"
+    },
+    {
+        "source": "Bob",
+        "target": "Carol"
+    },
+    {
+        "source": "Bob",
+        "target": "David"
+    },
+    {
+        "source": "Bob",
+        "target": "Eve"
+    },
+    {
+        "source": "Carol",
+        "target": "David"
+    },
+    {
+        "source": "David",
+        "target": "Eve"
+    }
+]

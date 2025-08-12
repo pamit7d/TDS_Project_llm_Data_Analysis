@@ -1,0 +1,87 @@
+{
+    "question_1_answer": {
+        "description": "The network data is provided as an edge list in a CSV file, with two columns: 'source' and 'target'. Each row represents a connection between two nodes. It is structured as a pandas DataFrame.",
+        "dataframe_overview": {
+            "class_type": "<class 'pandas.core.frame.DataFrame'>",
+            "range_index": "7 entries, 0 to 6",
+            "data_columns_summary": "total 2 columns",
+            "data_columns_details": [
+                {
+                    "column": "source",
+                    "non_null_count": 7,
+                    "dtype": "object"
+                },
+                {
+                    "column": "target",
+                    "non_null_count": 7,
+                    "dtype": "object"
+                }
+            ],
+            "memory_usage": "876.0 bytes"
+        },
+        "dataframe_head_sample": [
+            {
+                "source": "Alice",
+                "target": "Bob"
+            },
+            {
+                "source": "Alice",
+                "target": "Carol"
+            },
+            {
+                "source": "Bob",
+                "target": "Carol"
+            },
+            {
+                "source": "Bob",
+                "target": "David"
+            },
+            {
+                "source": "Bob",
+                "target": "Eve"
+            }
+        ]
+    },
+    "question_2_answer": {
+        "description": "The data can be prepared for further network analysis by loading it into a pandas DataFrame and then constructing a graph object, typically using a library like NetworkX. This allows for various graph-based algorithms and computations (e.g., centrality, pathfinding, community detection).",
+        "preparation_steps": [
+            "1. Load the 'data.csv' file into a pandas DataFrame using `pd.read_csv()`.",
+            "2. Convert the DataFrame into a graph object (e.g., `networkx.Graph` for an undirected graph or `networkx.DiGraph` for a directed graph) using `nx.from_pandas_edgelist()`. Each row in the DataFrame (source, target) becomes an edge in the graph."
+        ],
+        "example_graph_info": {
+            "graph_type": "Undirected Graph (networkx.Graph)",
+            "number_of_nodes": 5,
+            "number_of_edges": 7,
+            "is_directed": false,
+            "nodes_example": [
+                "Alice",
+                "Bob",
+                "Carol",
+                "David",
+                "Eve"
+            ],
+            "edges_example": [
+                [
+                    "Alice",
+                    "Bob"
+                ],
+                [
+                    "Alice",
+                    "Carol"
+                ],
+                [
+                    "Bob",
+                    "Carol"
+                ],
+                [
+                    "Bob",
+                    "David"
+                ],
+                [
+                    "Bob",
+                    "Eve"
+                ]
+            ]
+        }
+    }
+}

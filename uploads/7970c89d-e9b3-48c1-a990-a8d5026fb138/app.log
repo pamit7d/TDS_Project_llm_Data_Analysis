@@ -1,0 +1,22 @@
+2025-08-12 15:03:37,991 [INFO] Step-1: Folder created: uploads/7970c89d-e9b3-48c1-a990-a8d5026fb138
+2025-08-12 15:03:37,992 [INFO] Step-2: File sent {'edges.csv': 'uploads/7970c89d-e9b3-48c1-a990-a8d5026fb138/edges.csv'}
+2025-08-12 15:03:37,992 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 0
+2025-08-12 15:03:45,537 [INFO] Step-3: Response from scrapping: + \'\\n\\n\')\n\n f.write(\'--- DataFrame Head (first 5 rows) ---\\n\')\n f.write(df.head().to_string() + \'\\n\')\n', 'libraries': ['pandas'], 'questions': ["Process the provided CSV data from 'edges.csv' and generate metadata."]}
+2025-08-12 15:03:46,780 [INFO] Step-4: Execution result of the scrape code: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:03:46,780 [INFO] Step-5: Getting execution code from llm. Tries count = 0
+2025-08-12 15:03:54,458 [INFO] Step-5: Response from llm: = df['target'].unique().tolist() generated_metadata['total_unique_nodes'] = len(all_nodes) generated_metadata['all_unique_nodes'] = sorted(list(all_nodes)) # Save the generated metadata to a JSON file with open(output_json_path, 'w') as f: json.dump(generated_metadata, f, indent=4)
+2025-08-12 15:03:54,458 [INFO] Step-6: Executing final code. Tries count = 0
+2025-08-12 15:03:55,680 [INFO] Step-6: Executing final code result: o = _default(o) ^^^^^^^^^^^ File "/usr/lib/python3.12/json/encoder.py", line 180, in default raise TypeError(f'Object of type {o.__class__.__name__} ' TypeError: Object of type int64 is not JSON serializable
+2025-08-12 15:03:55,680 [ERROR] Step-6: Error occured while executing code. Tries count = 2
+2025-08-12 15:03:55,681 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-12 15:04:01,032 [INFO] Step-5: Response from llm: } # Define the output path output_path = 'uploads/7970c89d-e9b3-48c1-a990-a8d5026fb138/result.json' # Save the metadata to a JSON file with open(output_path, 'w') as f: json.dump(metadata, f, indent=4)
+2025-08-12 15:04:03,693 [INFO] Step-6: Executing final code result: in _make_engine self.handles = get_handle( ^^^^^^^^^^^ File "/home/mypc/Downloads/TDS_project2-main_new/TDS_project2-main/venv/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( ^^^^^ FileNotFoundError: [Errno 2] No such file or directory: 'edges.csv'
+2025-08-12 15:04:03,694 [ERROR] Step-6: Error occured while executing code. Tries count = 3
+2025-08-12 15:04:03,694 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-12 15:04:09,170 [INFO] Step-5: Response from llm: { "name": col, "dtype": str(df[col].dtype), "non_null_count": int(df[col].count()) } metadata["column_info"].append(col_info) # Save the metadata to a JSON file with open(output_file_path, 'w') as f: json.dump(metadata, f, indent=4)
+2025-08-12 15:04:10,436 [INFO] Step-6: Executing final code result: o = _default(o) ^^^^^^^^^^^ File "/usr/lib/python3.12/json/encoder.py", line 180, in default raise TypeError(f'Object of type {o.__class__.__name__} ' TypeError: Object of type int64 is not JSON serializable
+2025-08-12 15:04:10,436 [ERROR] Step-6: Error occured while executing code. Tries count = 4
+2025-08-12 15:04:10,436 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-12 15:04:18,984 [INFO] Step-5: Response from llm: values col_info["unique_values"] = df[col].unique().tolist() else: col_info["unique_values_count"] = int(df[col].nunique()) metadata["data_info"]["columns_info"].append(col_info) # Save the metadata to a JSON file with open(output_json_path, 'w') as f: json.dump(metadata, f, indent=4)
+2025-08-12 15:04:20,050 [INFO] Step-6: Executing final code result: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:04:20,051 [INFO] Step-7: send result back
